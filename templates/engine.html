@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Recommendation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="static/js/Engine.js"></script>
+ 
+  
+  <link rel="stylesheet" href="static/css/sku.css">
+  <link rel="stylesheet" href="static/css/search.css">
+
+  
+
+  <style>    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    img {
+    max-width: 100%;
+    max-height: 100%;
+} 
+
+body {
+  line-height: 8px;
+}
+    .square {
+    height: 180px;
+    width: 200px;
+    padding:0 10px;
+    margin:2.5px;
+
+} 
+ 
+p.a {
+  font-style: normal;
+}
+
+p.b {
+  font-style: italic;
+}
+
+p.c {
+  font-style: oblique;
+}
+p.small {
+  font-variant: small-caps;
+}
+p.thicker {
+    font-variant: small-caps;
+  font-weight: 600;
+}
+.table4 {
+        width: 50%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: 0;
+      }
+      .divL {
+        padding: 50px;
+        margin: 50px;
+        margin-top: 0px;
+        padding-top: 0px;
+
+      }
+      .divR {
+        
+        margin-top: 0px;
+        padding-top: 0px;
+
+      }
+     
+     
+
+
+</style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-default" role="navigation"style="border-bottom-color: rgb(241, 0, 0); background-color:#FFFFFF; border-radius:0px; ">
+  <div class="container-fluid">
+        <div class="navbar-header">
+        
+            <a class="navbar-brand" href="/home"><img src="static/Havells_Logo.png" width="115px" height="23px" > </a>
+        
+        </div>
+        <ul class="nav navbar-nav navbar-center">
+            <li class="nav-header">
+                <a class="nav-brand" style="text-align:center; padding-top:10px; font-size:20px;">
+                    <p class="thicker">Havells Recommendation Engine
+                    </p> 
+                </a>
+            </li>
+        </ul> 
+  </div>
+ 
+</nav>
+<table class="table4">
+    <tr>
+      <td>
+        <div class="divL">
+            <h4>Enter Product SKU</h4>
+            <input type="text" class="form-control col-1" id="sku-val" style="width: 206px;">
+            <button type="button" class="btn btn-primary" id="search" style="margin-top: 5px;">Search</button>
+        </div>
+      </td>
+      <td>
+        <div id="idxImage" class="divR"> </div>
+      </td>
+    </tr>
+    
+  </table>
+
+<div class="container"  id="recommendations" style="margin-top: 100px;" ></div>
+  
+</body>
+</html>

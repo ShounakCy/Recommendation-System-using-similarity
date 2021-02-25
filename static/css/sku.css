@@ -1,0 +1,17 @@
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.high-balance {
+    background-color: red;
+}
+
+.empty-balance {
+    background-color: aliceblue;
+}
+
+.low-balance {
+    background-color: green;
+}
